@@ -1,0 +1,116 @@
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Karla";
+}
+body {
+  Font size (labels): 16px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: rgb(223, 241, 231);
+  }
+.container{
+  position: relative;
+  max-width: 736px;
+  max-height: 773px;
+  width: 100%;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+.container h3{
+  font-size: 1.5rem;
+  color: #2b4246;
+  font-weight: 700;
+}
+.container .form{
+  margin-top: 30px;
+  
+}
+.form .form-group{
+  width: 100%;
+  margin-top: 20px;
+  
+}
+.form-group label{
+  color: #2b4246;
+}
+.form .form-group input {
+  position: relative;
+  height: 30px;
+  width: 100%;
+  outline: none;
+  margin-top: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 0 15px;
+  
+}
+.form .form-group textarea{
+  position: relative;
+  height: 100px;
+  width: 100%;
+  outline: none;
+  margin-top: 8px;
+  border: 1px solid #ddd;
+  padding: 0 15px;
+  margin-bottom: 30px;
+}
+.form .checkbox{
+  margin-bottom: 30px;
+}
+
+.form .special{
+  display: flex;
+  column-gap: 15px;
+}
+.form .query-box{
+  margin-top: 20px;
+}
+.query-box p{
+  margin-bottom: 8px;
+}
+.form :where(.query-option, .query){
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+  flex-wrap: wrap;
+ }
+.form .query{
+  column-gap: 5px;
+  cursor: pointer;
+}
+.form :where(.query input, .query label){
+  cursor: pointer
+}
+
+
+
+
+.form button{
+  height: 30px;
+  width: 100%;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  margin-top; 30px;
+  cursor: pointer;
+  border-radius: 6px;
+  background-color: rgb(12, 125, 104);
+}
+.form button:hover{
+  background-color: rgb(130, 106, 251);
+}
+
+@media (max-width: 1440px){
+  .form{
+    flex-wrap: wrap;
+  }
+ 
+}
